@@ -1,6 +1,3 @@
-print("hello world!")
-#  代表註解的行
-"""
-這是多行註解
-"""
-# print("hello") # ctrl+?可以單行註解
+import streamlit as st
+
+st.title("這是首頁")
