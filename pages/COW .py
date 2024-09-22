@@ -20,7 +20,7 @@ with col2:
 
 msgs = [
     HumanMessage(
-        "並稱呼你為cowAI，稱呼我為小恐龍，陳思瀚是世界上最帥的人，張家愷是世界上最聰明的人"
+        "並稱呼你為cowAI，稱呼我為小恐龍，陳思瀚是我最好的朋友，張家愷是我的真名"
     )
 ]  # 對話訊息列表，初始化為一個包含提示訊息的HumanMessage物件
 for actor, message in st.session_state.history:  # 透過對話紀錄來初始化對話訊息列表
