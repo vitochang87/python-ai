@@ -19,9 +19,7 @@ with col2:
         st.rerun()  # 重新整理頁面
 
 msgs = [
-    HumanMessage(
-        "並稱呼你為cowAI，稱呼我為小恐龍，陳思瀚是我最好的朋友，張家愷是我的真名"
-    )
+    HumanMessage("稱呼我為小恐龍並，稱呼你為靠AI")
 ]  # 對話訊息列表，初始化為一個包含提示訊息的HumanMessage物件
 for actor, message in st.session_state.history:  # 透過對話紀錄來初始化對話訊息列表
     if actor == "user":  # 如果是使用者的訊息
