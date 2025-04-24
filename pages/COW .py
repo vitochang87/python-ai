@@ -32,7 +32,7 @@ for actor, message in st.session_state.history:  # 透過對話紀錄來初始�
         )  # 顯示AI回傳的對話紀錄訊息
         msgs.append(AIMessage(message))  # 將AI回傳的訊息加入對話訊息列表
 
-chat = ChatOpenAI(model="gpt-4o", temperature=0.2, api_key=openai_key)
+chat = ChatOpenAI(model="o3-mini", temperature=0.2, api_key=openai_key)
 prompt = st.chat_input("請輸入想要對話的訊息")  # 顯示對話輸入框
 if prompt:  # 如果使用者輸入了訊息
     st.session_state.history.append(["user", prompt])  # 將使用者輸入的訊息加入對話紀錄
